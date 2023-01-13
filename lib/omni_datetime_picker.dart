@@ -86,6 +86,7 @@ Future<List<DateTime>?> showOmniDateTimeRangePicker({
   TextStyle? timeSpinnerTextStyle,
   TextStyle? timeSpinnerHighlightedTextStyle,
   Radius? borderRadius,
+  int? minutesInterval,
 }) {
   return showDialog(
     context: context,
@@ -110,6 +111,7 @@ Future<List<DateTime>?> showOmniDateTimeRangePicker({
         timeSpinnerTextStyle: timeSpinnerTextStyle,
         timeSpinnerHighlightedTextStyle: timeSpinnerHighlightedTextStyle,
         borderRadius: borderRadius,
+        minutesInterval: minutesInterval,
       );
     },
   );
