@@ -51,6 +51,7 @@ class OmniDateTimeRangePicker extends StatefulWidget {
   final TextStyle? timeSpinnerTextStyle;
   final TextStyle? timeSpinnerHighlightedTextStyle;
   final Radius? borderRadius;
+  final int? minutesInterval;
 
   const OmniDateTimeRangePicker({
     Key? key,
@@ -73,6 +74,7 @@ class OmniDateTimeRangePicker extends StatefulWidget {
     this.timeSpinnerTextStyle,
     this.timeSpinnerHighlightedTextStyle,
     this.borderRadius,
+    this.minutesInterval,
   }) : super(key: key);
 
   @override
@@ -234,7 +236,9 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker> with 
                                     );
 
                                     endDateTime = tempEndDateTime;
+                                    
                                   },
+                                  minutesInterval: widget.minutesInterval ?? 1,
                                 )
                               : Container(),
                         ],
