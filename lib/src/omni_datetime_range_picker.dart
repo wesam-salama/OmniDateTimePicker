@@ -239,6 +239,7 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker> with 
                                     
                                   },
                                   minutesInterval: widget.minutesInterval ?? 1,
+                                  isForce2Digits: true,
                                 )
                               : Container(),
                         ],
@@ -286,6 +287,8 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker> with 
 
                                         startDateTime = tempStartDateTime;
                                       },
+                                      minutesInterval: widget.minutesInterval ?? 1,
+                                      isForce2Digits: true,
                                     ),
                                   ],
                                 )
